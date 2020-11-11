@@ -1,0 +1,54 @@
+{
+  "name": "webpack-app",
+  "version": "1.0.3",
+  "description": "Webpack 4 app template",
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ],
+  "scripts": {
+    "build": "webpack --mode=development --progress --hide-modules",
+    "production": "webpack --mode=production --progress --hide-modules --devtool=source-maps",
+    "watch": "webpack --mode=development --watch",
+    "start": "webpack-dev-server --open --mode=development",
+    "clear": "del-cli dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "keywords": [
+    "webpack",
+    "AleksandrP91",
+    "frontend"
+  ],
+  "author": "Alexandr Pirogov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AleksandrP91.com"
+  },
+  "homepage": "https://github.com/AleksandrP91b.com/",
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.0.1",
+    "browserlist": "^1.0.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.2",
+    "css-loader": "^2.1.1",
+    "del-cli": "^3.0.1",
+    "image-webpack-loader": "^5.1.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^4.0.4",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^0.23.1",
+    "svg-url-loader": "^2.3.3",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {}
+}

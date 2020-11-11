@@ -1,0 +1,60 @@
+.sorting
+  padding-left: 40px
+  margin-top: 37px
+  .container
+    display: flex
+    align-items: center
+    width: 1280px
+    margin: 0 auto
+  .sorting__title
+    color: #000
+    font-size: 18px
+    font-weight: 700
+    padding-right: 48px
+  .sorting__price
+    display: flex
+    align-items: center
+    color: #000
+    font-size: 18px
+    font-weight: 400  
+    padding-right: 55px
+    p:hover
+      border-bottom: 2px solid #000
+      cursor: pointer
+  .sorting__age
+    display: flex
+    align-items: center
+    color: #000
+    font-size: 18px
+    font-weight: 400
+    p:hover
+      border-bottom: 2px solid #000
+      cursor: pointer
+@media (max-width: 767px)
+  .sorting
+    .container
+      flex-direction: column
+      align-items: normal
+      width: 680px
+      margin: 0 auto
+      .sorting__title
+        font-size: 16px
+      .sorting__price
+        font-size: 16px
+      .sorting__age
+        font-size: 16px
+@media (max-width: 375px)
+  .sorting
+    .container
+      flex-direction: column
+      // align-items: start
+      justify-content: center
+      width: 300px
+      margin: 0 auto
+      .sorting__title
+        font-size: 16px
+      .sorting__price
+        font-size: 16px
+      .sorting__age
+        font-size: 16px
+

@@ -1,0 +1,118 @@
+.card
+  display: flex
+  .container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    width: 1280px
+    margin: 0 auto
+  .card__cats
+    margin: 38px 0 0 0
+    position: relative
+    background-color: #F3F3F3
+    width: 380px
+    height: 530px 
+    .cats__img
+      background: url(./../../src/img/cat-one.png) center center/cover no-repeat
+      width: 100%
+      height: 264px
+      .cats__discount
+        position: absolute
+        padding: 10px 20px
+        top: 34px
+        left: 38px
+        z-index: 1
+        background-color:#E62D2D
+        color: #fff
+        border-radius: 10px
+        font-size: 16px
+        font-weight: 400
+      .cats__like
+        svg
+          position: absolute
+          right: 32px
+          top: 36px
+          z-index: 1
+        svg:hover path
+          fill-opacity: 1
+          transition: .6s 
+          cursor: pointer
+    .card__title
+      margin: 29px 0 0 29px
+      font-size: 24px
+      font-weight: 700
+    .cats__info
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin: 24px 30px 0 30px
+      border-left: 4px solid #6EBBD3
+      p
+        font-size: 12px
+        font-weight: 400
+        width: 90px
+        margin-left: 18px
+      span
+        font-size: 16px
+        font-weight: 700
+        margin-left: 18px
+      .month
+        text-align: center
+      .quantity
+    .cats__price
+      margin: 25px 0 0 29px
+      p
+        font-size: 24px
+        font-weight: 700
+    .cats__button
+      position: absolute
+      margin-top: 29px
+      bottom: 0
+      left: 0
+      .button-sales
+        background-color: #1F2021
+      .button-sales:hover
+        background-color: #1F2021
+      button
+        width: 380px
+        height: 65px
+        border: none
+        outline: none
+        border-bottom-left-radius: 8px
+        border-bottom-right-radius: 8px
+        background-color: #6EBBD3
+        color: #fff
+        font-size: 16px
+        font-weight: 700
+      button:hover
+        background-color: #077799
+        cursor: pointer
+        transition: .6s
+@media (max-width: 767px)
+  .card
+    .container
+      width: 680px
+      margin: 0 auto
+      .card__cats
+        width: 300px
+        height: 490px
+      .cats__img
+        height: 240px
+      .card__title
+        font-size: 22px
+      .cats__info
+        margin: 20px 0px 0 12px
+        p
+          margin-left: 10px
+        span
+          margin-left: 10px
+      .cats__price
+        p
+          font-size: 22px
+      .cats__button
+        button
+          width: 300px
+
+
+
+
